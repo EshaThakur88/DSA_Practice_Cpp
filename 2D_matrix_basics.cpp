@@ -39,6 +39,25 @@ void rowSum(int arr[][4], int row, int col)
         cout << sum<<" ";
     }
 }
+//largest row sum
+void largestRowSum(int arr[][4], int row, int col){
+    int largestSum=INT_MIN;
+    int rowIndex=-1;
+    for (int i = 0; i < row; i++)
+    {
+        int sum=0;
+        for (int j = 0; j < col; j++)
+        {
+            sum+=arr[i][j];
+        }
+        if(largestSum<sum){
+            largestSum=sum;
+            rowIndex=i;
+        }
+    }
+    cout<<"Max sum row index is "<<rowIndex<<" and it's sum is "<<largestSum<<"."<<endl;
+    
+}
 
 //column wise sum
 void colSum(int arr[][4], int row,int col){
@@ -102,9 +121,14 @@ int main()
     //     cout << "Element is not present."<<endl;
     // }
 
-    search2D(arr,3,4,11);
-    // row wise sum
-    rowSum(arr, 3, 4);
-    colSum(arr,3,4);
+    // search2D(arr,3,4,11);
+    // // row wise sum
+    // rowSum(arr, 3, 4);
+    // //col wise sum
+    // colSum(arr,3,4);
+    // //largest row sum
+    // cout<<endl;
+    // cout<<"largest row sum: ";
+    largestRowSum(arr,3,4);
     return 0;
 }

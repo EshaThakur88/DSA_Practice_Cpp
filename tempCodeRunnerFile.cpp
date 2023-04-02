@@ -1,7 +1,2 @@
-for(int i=0; i<3;i++){
-    //     for (int j= 0; j < 4; j++)
-    //     {
-    //         cin>>arr[i][j];
-    //     }
-        
-    // }
+insert_at_head(head,10);
+    print_ll(head);
