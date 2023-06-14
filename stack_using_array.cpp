@@ -3,7 +3,6 @@ using namespace std;
 
 int top=-1;
 int count=0;
-int arr[5];
 
 void push(int x, int* arr){
     ++top;
@@ -16,11 +15,12 @@ void push(int x, int* arr){
 
 void pop(int* arr){
     arr[top--]=-1;
-    
+    count--;
 }
 
 
 int main(){
+    int arr[5];
     push(5,arr);
     push(4,arr);
     push(3, arr);
