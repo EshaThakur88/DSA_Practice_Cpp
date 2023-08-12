@@ -4,7 +4,8 @@
     "iostream": "cpp",
     "new": "cpp",
     "ostream": "cpp",
-    "single_digit_sum": "c"
+    "single_digit_sum": "c",
+    "vector": "cpp"
   },
   "C_Cpp_Runner.cCompilerPath": "gcc",
   "C_Cpp_Runner.cppCompilerPath": "g++",
